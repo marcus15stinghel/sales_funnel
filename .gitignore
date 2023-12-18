@@ -6,3 +6,6 @@
 
 #log
 /log.txt
+
+#Leads integrateds
+/src/integrators/apollo_send_leads/leads.json
