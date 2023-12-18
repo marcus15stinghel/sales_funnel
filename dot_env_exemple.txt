@@ -1,0 +1,7 @@
+APOLLO_URL = "apollo-url"
+APOLLO_MASTER_KEY = "key-alfa-number"
+
+WEPIPE_URL = "wepipe-url"
+WEPIPE_AUTHORIZATION = "Bearer token"
+WEPIPE_TOKEN = "token-alfa-number"
+WEPIPE_OUTBOUND_USER_ID = int

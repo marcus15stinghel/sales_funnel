@@ -1,0 +1,26 @@
+{
+    "customer_id": 1,
+    "user_id": 1,
+    "pipeline_id": 1623,
+    "pipeline_stage_id": 13479,
+    "name": "Rafael Toro Academia de Finanças",
+    "tags": [
+        "🟡 Morno"
+    ],
+    "custom_fields": [
+        {
+            "cf_industria": "banking",
+            "cf_total_de_colaboradores": 68,
+            "cf_website": "http://www.academiarafaeltoro.com.br",
+            "cf_linkedin_da_empresa": "http://www.linkedin.com/company/academiarafaeltoro",
+            "cf_nome": "Victorio",
+            "cf_sobrenome": "Santi",
+            "cf_telefone": "+5551983219951",
+            "cf_departamento": "",
+            "cf_cargo": "Chief Operating Officer",
+            "cf_email": "victorio@academiarafaeltoro.com.br",
+            "cf_linkedin_do_contato": "http://www.linkedin.com/in/victorio-santi-cea-cfp%c2%ae-07632271",
+            "cf_motivo_de_perda": ""
+        }
+    ]
+}
