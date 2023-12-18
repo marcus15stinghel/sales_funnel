@@ -4,12 +4,14 @@ from src.config import Log
 import logging as log
 from typing import List
 import json
+import os
 
 
 class ApolloSendLeads:
     def __init__(self):
         Log.configurator()
         self.__old_leads_path = 'src/integrators/apollo_send_leads/leads.json'
+        self.__create_leads_json_file_if_not_exist()
         self.__apollo_api = AplloService()
         self.__wepipe_api = Wepipe_Api()
         self.__get_old_leads()
@@ -32,9 +34,9 @@ class ApolloSendLeads:
 
     def __get_old_leads(self) -> None:
         with open(self.__old_leads_path, 'r', encoding='utf-8') as data:
-            self.__integrated_leads: list[str] = [lead['contact_id'] for lead in json.load(data)]
+            self.__integrated_leads: List[str] = [lead['contact_id'] for lead in json.load(data)]
 
-    def __get_new_leads(self, page: int) -> list[Lead]:
+    def __get_new_leads(self, page: int) -> List[Lead]:
         leads: List[Lead] = self.__apollo_api.get_leads(page)
         log.info(f'Pack de leads pego. Página: {page}, Total: {len(leads)} \n')
         return [lead for lead in leads if lead.data_contact[0].id not in self.__integrated_leads]
@@ -46,10 +48,17 @@ class ApolloSendLeads:
 
     def __update_old_leads(self) -> None:
         with open(self.__old_leads_path, 'r', encoding='utf-8') as data:
-            old_leads: list[dict] = json.load(data)
+            old_leads: List[dict] = json.load(data)
         with open(self.__old_leads_path, 'w', newline='\n', encoding='utf-8') as data:
             json.dump(old_leads + self.__leads_to_integrate, data, indent=4, ensure_ascii=False)
         log.info('\nLista de leads já integrados atualizada.')
+
+    def __create_leads_json_file_if_not_exist(self) -> None:
+        if not os.path.exists(self.__old_leads_path):
+            with open(self.__old_leads_path, 'w') as data:
+                data_format = [{"name": "", "contact_id": ""}]
+                json.dump(data_format, data, indent=4, ensure_ascii=False)
+
 
     @staticmethod
     def __generate_integrated_lead(lead: Lead) -> dict:

@@ -62,14 +62,14 @@ class AplloService():
             'title': contact['title'],
         }
 
-    def __get_leads_clicked(self, page) -> list[Lead]:
+    def __get_leads_clicked(self, page) -> List[Lead]:
         url = self.__generate_endpoint('emailer_messages/search')
         body = self.__generate_body_get_leads(status_email='clicked', opened_number=2, page=page)
         response = requests.post(url=url, headers=self.__headers, json=body)
         response_model: DataLeads = DataLeads(**response.json())
         return [lead for lead in response_model.leads if lead.num_clicks and lead.num_clicks >= 2]
 
-    def __get_leads_opened(self, page) -> list[Lead]:
+    def __get_leads_opened(self, page) -> List[Lead]:
         url = self.__generate_endpoint('emailer_messages/search')
         body = self.__generate_body_get_leads(status_email='opened', opened_number=3, page=page)
         response = requests.post(url=url, headers=self.__headers, json=body)
