@@ -2,7 +2,7 @@ import requests
 from src.config.env import Env
 
 
-class Wepipe_Api:
+class WepipeService:
     def __init__(self) -> None:
         self.env = Env()
         self.__url = self.env.wepipe_url
@@ -20,4 +20,4 @@ class Wepipe_Api:
         return response.status_code == 201
 
     def __generate_url(self, endpoint) -> str:
-        return f'{self.__url}/'
+        return f'{self.__url}/{endpoint}'

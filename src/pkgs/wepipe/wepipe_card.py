@@ -1,4 +1,4 @@
-from src.pkgs.wepipe import wepipe_api
+from src.pkgs.wepipe import wepipe_service
 
 class Wepipe_card:
     def __init__(self, enrichment_lead: dict) -> dict:

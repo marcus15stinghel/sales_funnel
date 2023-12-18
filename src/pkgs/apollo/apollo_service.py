@@ -66,6 +66,8 @@ class AplloService():
         url = self.__generate_endpoint('emailer_messages/search')
         body = self.__generate_body_get_leads(status_email='clicked', opened_number=2, page=page)
         response = requests.post(url=url, headers=self.__headers, json=body)
+        if response.status_code == 429:
+            raise Exception(f'Erro: {response.text}')
         response_model: DataLeads = DataLeads(**response.json())
         return [lead for lead in response_model.leads if lead.num_clicks and lead.num_clicks >= 2]
 
@@ -73,6 +75,8 @@ class AplloService():
         url = self.__generate_endpoint('emailer_messages/search')
         body = self.__generate_body_get_leads(status_email='opened', opened_number=3, page=page)
         response = requests.post(url=url, headers=self.__headers, json=body)
+        if response.status_code == 429:
+            raise Exception(f'Erro: {response.text}')
         return DataLeads(**response.json()).leads
 
     def __get_enrichment_organization(self, contact) -> dict:

@@ -1,5 +1,5 @@
 from src.pkgs.apollo import AplloService, Lead
-from src.pkgs.wepipe import Wepipe_Api #, Wepipe_card
+from src.pkgs.wepipe import WepipeService #, Wepipe_card
 from src.config import Log
 import logging as log
 from typing import List
@@ -13,15 +13,15 @@ class ApolloSendLeads:
         self.__old_leads_path = 'src/integrators/apollo_send_leads/leads.json'
         self.__create_leads_json_file_if_not_exist()
         self.__apollo_api = AplloService()
-        self.__wepipe_api = Wepipe_Api()
+        self.__wepipe_api = WepipeService()
         self.__get_old_leads()
         self.__leads_to_integrate: list[dict] = []
+        self.__leads_per_page = 25
 
     def run(self) -> None:
         log.info('Início do progrma. \n')
         page = 0
-        leads_per_page = 25
-        while leads_per_page >= 25:
+        while self.__leads_per_page >= 25:
             page += 1
             leads = self.__get_new_leads(page=page)
             for lead in leads:
@@ -39,6 +39,7 @@ class ApolloSendLeads:
     def __get_new_leads(self, page: int) -> List[Lead]:
         leads: List[Lead] = self.__apollo_api.get_leads(page)
         log.info(f'Pack de leads pego. Página: {page}, Total: {len(leads)} \n')
+        self.__leads_per_page = len(leads)
         return [lead for lead in leads if lead.data_contact[0].id not in self.__integrated_leads]
 
     def __add_lead_to_integrate(self, lead: Lead):
@@ -79,3 +80,4 @@ class ApolloSendLeads:
 #     log.info(f'Card {lead["id"]} enviado para Ountbound.')
 # else:
 #     log.info(f'Card {lead["id"]} não intgrado, contato inexistente.')
+
