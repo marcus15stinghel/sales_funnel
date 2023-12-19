@@ -1,0 +1,267 @@
+{
+    "organization": {
+        "id": "5e56f27b1d824a00010d0f6b",
+        "name": "Rafael Toro Academia de Finanças",
+        "website_url": "http://www.academiarafaeltoro.com.br",
+        "blog_url": null,
+        "angellist_url": null,
+        "linkedin_url": "http://www.linkedin.com/company/academiarafaeltoro",
+        "twitter_url": null,
+        "facebook_url": "https://www.facebook.com/academiarafaeltoro",
+        "primary_phone": {},
+        "languages": [],
+        "alexa_ranking": 77859,
+        "phone": null,
+        "linkedin_uid": "28170082",
+        "founded_year": 2016,
+        "publicly_traded_symbol": null,
+        "publicly_traded_exchange": null,
+        "logo_url": "https://zenprospect-production.s3.amazonaws.com/uploads/pictures/65803943b6d8cc00016e4739/picture",
+        "crunchbase_url": null,
+        "primary_domain": "academiarafaeltoro.com.br",
+        "industry": "banking",
+        "keywords": [
+            "cpa20",
+            "financial planner",
+            "certificacoes bancarias",
+            "banking",
+            "cea",
+            "cpa10",
+            "cfp"
+        ],
+        "estimated_num_employees": 69,
+        "industries": [
+            "banking"
+        ],
+        "secondary_industries": [],
+        "snippets_loaded": true,
+        "industry_tag_id": "5567ce237369644ee5490000",
+        "industry_tag_hash": {
+            "banking": "5567ce237369644ee5490000"
+        },
+        "retail_location_count": 0,
+        "raw_address": "943 rua dos andradas, porto alegre, state of rio grande do sul, brazil",
+        "street_address": "943 Rua dos Andradas",
+        "city": "Porto Alegre",
+        "state": "State of Rio Grande do Sul",
+        "postal_code": "90020-006",
+        "country": "Brazil",
+        "owned_by_organization_id": null,
+        "suborganizations": [],
+        "num_suborganizations": 0,
+        "seo_description": "Cursos preparatórios para Certificações Financeiras. A Academia Rafael Toro é comprometida com a sua aprovação! Comece a estudar agora mesmo.",
+        "short_description": "Rafael Toro, CFP®, é formado em administração de empresas pela UFRGS, professor há mais de quinze anos e profissional CFP® há mais de cinco anos. A fim de revolucionar o ensino do mercado financeiro, fundou a Rafael Toro Academia de Finanças.\nA metodologia exclusiva de Rafael Toro tem se mostrado uma aliada na transformação pessoal dos alunos, no crescimento profissional e na economia de tempo, o que reflete em benefícios econômicos e qualidade de vida. Quem estuda com Rafael Toro sabe que há um compromisso. O foco é voltado 100% para o aluno.\nSe você está aqui nesta rede, é porque valoriza conceções profissionais. Acreditamos no poder transformador do profissional financeiro e na sua responsabilidade diante da sociedade. Por isso, acompanhamos o aluno desde a resolução dos primeiros exercícios até a sua aprovação - e não para por aí! Continuamos conectados a fim de descobrirmos juntos nosso propósito no mercado financeiro. \nInvista na sua aprovação em tempo recorde nas principais certificações do mercado financeiro: CPA-10, CPA-20, CEA, CGA, CFG e CFP®. Mais de 20 mil alunos passaram pela escola. Em 2021, foram mais de 850 alunos aprovados no CFP®. No 1º semestre de 2022, mais de mil aprovados nas provas da ANBIMA. Estude conosco!\nContato por e-mail: contato@academiarafaeltoro.com.br\nHorário de atendimento: segunda à sexta, das 10h às 22h.",
+        "total_funding": null,
+        "total_funding_printed": null,
+        "latest_funding_round_date": null,
+        "latest_funding_stage": null,
+        "funding_events": [],
+        "technology_names": [
+            "Amazon AWS",
+            "Apache",
+            "DoubleClick",
+            "DoubleClick Conversion",
+            "Facebook Custom Audiences",
+            "Facebook Login (Connect)",
+            "Facebook Widget",
+            "Gmail",
+            "Google AdSense",
+            "Google AdWords Conversion",
+            "Google Analytics",
+            "Google Apps",
+            "Google Dynamic Remarketing",
+            "Google Font API",
+            "Google Play",
+            "Google Tag Manager",
+            "Hotjar",
+            "MailChimp SPF",
+            "Mobile Friendly",
+            "React",
+            "Route 53",
+            "Vimeo",
+            "WordPress.org",
+            "YouTube",
+            "reCAPTCHA"
+        ],
+        "current_technologies": [
+            {
+                "uid": "amazon_aws",
+                "name": "Amazon AWS",
+                "category": "Hosting"
+            },
+            {
+                "uid": "apache",
+                "name": "Apache",
+                "category": "Load Balancers"
+            },
+            {
+                "uid": "doubleclick",
+                "name": "DoubleClick",
+                "category": "Ad Servers"
+            },
+            {
+                "uid": "doubleclick_conversion",
+                "name": "DoubleClick Conversion",
+                "category": "Advertising Networks"
+            },
+            {
+                "uid": "facebook_web_custom_audiences",
+                "name": "Facebook Custom Audiences",
+                "category": "Retargeting"
+            },
+            {
+                "uid": "facebook_login",
+                "name": "Facebook Login (Connect)",
+                "category": "Social Login"
+            },
+            {
+                "uid": "facebook_widget",
+                "name": "Facebook Widget",
+                "category": "Widgets"
+            },
+            {
+                "uid": "gmail",
+                "name": "Gmail",
+                "category": "Email Providers"
+            },
+            {
+                "uid": "google_adsense",
+                "name": "Google AdSense",
+                "category": "Advertising Networks"
+            },
+            {
+                "uid": "google_adwords_conversion",
+                "name": "Google AdWords Conversion",
+                "category": "Advertising Networks"
+            },
+            {
+                "uid": "google_analytics",
+                "name": "Google Analytics",
+                "category": "Analytics and Tracking"
+            },
+            {
+                "uid": "google_apps",
+                "name": "Google Apps",
+                "category": "Other"
+            },
+            {
+                "uid": "google_dynamic_remarketing",
+                "name": "Google Dynamic Remarketing",
+                "category": "Retargeting"
+            },
+            {
+                "uid": "google_font_api",
+                "name": "Google Font API",
+                "category": "Fonts"
+            },
+            {
+                "uid": "google_play",
+                "name": "Google Play",
+                "category": "Widgets"
+            },
+            {
+                "uid": "google_tag_manager",
+                "name": "Google Tag Manager",
+                "category": "Tag Management"
+            },
+            {
+                "uid": "hotjar",
+                "name": "Hotjar",
+                "category": "Analytics and Tracking"
+            },
+            {
+                "uid": "mailchimp_spf",
+                "name": "MailChimp SPF",
+                "category": "Other"
+            },
+            {
+                "uid": "mobile_friendly",
+                "name": "Mobile Friendly",
+                "category": "Other"
+            },
+            {
+                "uid": "react",
+                "name": "React",
+                "category": "CSS and JavaScript Libraries"
+            },
+            {
+                "uid": "route_53",
+                "name": "Route 53",
+                "category": "Domain Name Services"
+            },
+            {
+                "uid": "vimeo",
+                "name": "Vimeo",
+                "category": "Online Video Platforms"
+            },
+            {
+                "uid": "wordpress_org",
+                "name": "WordPress.org",
+                "category": "CMS"
+            },
+            {
+                "uid": "youtube",
+                "name": "YouTube",
+                "category": "Online Video Platforms"
+            },
+            {
+                "uid": "recaptcha",
+                "name": "reCAPTCHA",
+                "category": "Captcha"
+            }
+        ],
+        "org_chart_root_people_ids": [],
+        "org_chart_sector": null,
+        "org_chart_removed": null,
+        "account_id": "64c911d8f3dab60001d3962a",
+        "account": {
+            "id": "64c911d8f3dab60001d3962a",
+            "domain": "academiarafaeltoro.com.br",
+            "name": "Rafael Toro Academia de Finanças",
+            "team_id": "6182c64c5e9da000a4d46b83",
+            "organization_id": "5e56f27b1d824a00010d0f6b",
+            "account_stage_id": "6182c64c5e9da000a4d46b8e",
+            "source": "deployment",
+            "original_source": "deployment",
+            "creator_id": "6182c64d5e9da000a4d46bff",
+            "owner_id": "6182c64d5e9da000a4d46bff",
+            "created_at": "2023-08-01T14:08:24.350Z",
+            "phone": "+5551983219951",
+            "phone_status": "no_status",
+            "hubspot_id": null,
+            "salesforce_id": null,
+            "crm_owner_id": null,
+            "parent_account_id": null,
+            "sanitized_phone": "+5551983219951",
+            "account_playbook_statuses": [],
+            "account_rule_config_statuses": [],
+            "existence_level": "full",
+            "label_ids": [],
+            "typed_custom_fields": {},
+            "modality": "account",
+            "intent_strength": null,
+            "show_intent": false
+        },
+        "departmental_head_count": {
+            "consulting": 2,
+            "arts_and_design": 3,
+            "engineering": 6,
+            "product_management": 1,
+            "data_science": 2,
+            "education": 11,
+            "sales": 1,
+            "operations": 1,
+            "marketing": 1,
+            "accounting": 0,
+            "finance": 0,
+            "human_resources": 0,
+            "information_technology": 0,
+            "legal": 0,
+            "business_development": 0,
+            "administrative": 0,
+            "media_and_commmunication": 0,
+            "entrepreneurship": 0,
+            "support": 0
+        }
+    }
+}
