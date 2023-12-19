@@ -3,7 +3,7 @@ import json
 import requests
 from src.config import Env
 from typing import List
-from .response_models.get_leads import DataLeads, Lead
+from src.pkgs.apollo.models.responses.get_leads import DataLeads, Lead
 class AplloService():
     def __init__(self) -> None:
         self.__vars = Env()
